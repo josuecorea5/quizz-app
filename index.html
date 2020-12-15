@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- Start quiz  -->
+    <div class="start__btn">
+      <button>Empezar Examen</button>
+    </div>
+    <!-- Informacion de la caja -->
+    <div class="info__box">
+      <div class="info__title">
+        <span>Regla para el examen</span>
+      </div>
+      <div class="info__list">
+        <div class="info__list--item">
+          1. Tendrás <span>30 segundos</span> por cada pregunta
+        </div>
+        <div class="info__list--item">
+          2. Una vez seleccionada la respuesta no podrás cambiarla
+        </div>
+        <div class="info__list--item">
+          3. No puedes seleccionar una vez terminado el tiempo
+        </div>
+        <div class="info__list--item">4. No puedes salir del examen</div>
+        <div class="info__list--item">
+          5. Obtendrás puntos en base a tu respuestas correctas
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Salir del Examen</button>
+        <button class="restart">Continuar</button>
+      </div>
+    </div>
+    <!-- Caja de preguntas  -->
+    <div class="quiz__box">
+      <header>
+        <div class="title">Demuestra lo aprendido</div>
+        <div class="timer">
+          <div class="timer__text">Tiempo restante</div>
+          <div class="timer__sec">30</div>
+        </div>
+        <div class="time__line"></div>
+      </header>
+      <section>
+        <div class="que__text">
+          <!-- <span>¿Que significa HTML?</span> -->
+        </div>
+        <div class="option__list">
+          <!-- <div class="option__list--option">
+            <span>Hyper Text Preprocessor</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="option__list--option">
+            <span>Hyper Text Markup Language</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option__list--option">
+            <span>Hyper Text Multiple Language</span>
+          </div>
+          <div class="option__list--option">
+            <span>Hyper Tool Multi Language</span>
+          </div> -->
+        </div>
+      </section>
+      <!-- quiz box footer  -->
+      <footer>
+        <div class="total__que">
+          <!-- <span
+            ><p>2</p>
+            de
+            <p>5</p>
+            preguntas</span
+          > -->
+        </div>
+        <button class="next__btn">Siguiente Pregunta</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result__box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete__text">Usted ha completado el examen!</div>
+      <div class="score__text">
+        <!-- <span
+          >Lo siento, solo tienes
+          <p>2</p>
+          de
+          <p>5</p></span -->
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart">Repetir Examen</button>
+        <button class="quit">Salir del examen</button>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/questions.js"></script>
+  </body>
+</html>
